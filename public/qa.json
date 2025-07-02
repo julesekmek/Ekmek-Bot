@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Qu'est-ce que le IA Product Management ?",
+    "answer": "L'IA Product Management consiste à concevoir, développer et améliorer des produits digitaux qui intègrent des composants d'intelligence artificielle, en assurant la cohérence entre les besoins utilisateurs, les contraintes techniques, et les objectifs business."
+  },
+  {
+    "question": "Pourquoi l'IA transforme-t-elle le rôle du Product Manager ?",
+    "answer": "Parce qu'un PM IA doit collaborer étroitement avec les data scientists et ingénieurs pour comprendre les modèles, gérer l'incertitude, mesurer la performance des algorithmes, et encadrer l'impact éthique et utilisateur."
+  },
+  {
+    "question": "Quelles sont les compétences clés d'un PM IA ?",
+    "answer": "Compréhension des bases de l'IA (machine learning, NLP…), capacité à formuler des problèmes sous forme de données, gestion des risques liés aux biais ou hallucinations, et pilotage des livrables en environnement incertain."
+  },
+  {
+    "question": "Comment valider un problème adapté à l'IA ?",
+    "answer": "Il faut vérifier que le problème a une forte variabilité, un coût élevé de résolution manuelle, un historique de données, et qu'il serait amélioré par une capacité prédictive ou d'automatisation."
+  },
+  {
+    "question": "Quels sont les types d'IA couramment utilisés ?",
+    "answer": "Apprentissage supervisé, non supervisé, par renforcement, traitement du langage naturel (NLP), reconnaissance d'image, modèles génératifs comme les LLM (Large Language Models)."
+  },
+  {
+    "question": "Quelle est la différence entre une règle métier et un modèle IA ?",
+    "answer": "Une règle métier est codée manuellement, tandis qu'un modèle IA apprend les règles à partir des données. L'IA est plus adaptée dans les environnements complexes ou flous."
+  },
+  {
+    "question": "Qu'est-ce que le fine-tuning ?",
+    "answer": "C'est l'adaptation d'un modèle pré-entraîné sur un cas d'usage spécifique via des données personnalisées. Cela permet d'améliorer les performances sans repartir de zéro."
+  },
+  {
+    "question": "Comment mesurer la performance d'un modèle IA ?",
+    "answer": "Avec des métriques comme l'accuracy, la précision, le rappel (recall), le F1 score ou l'AUC, selon le type de tâche (classification, régression, etc.)."
+  },
+  {
+    "question": "Qu'est-ce qu'une hallucination dans les IA génératives ?",
+    "answer": "C'est lorsqu'un modèle comme GPT génère des réponses fausses ou incohérentes mais présentées avec confiance. C'est un défi important à anticiper."
+  },
+  {
+    "question": "Quels sont les 6 cas d'usage types de l'IA ?",
+    "answer": "1. Automatisation, 2. Personnalisation, 3. Recommandation, 4. Résumé ou extraction d'information, 5. Prédiction, 6. Génération de contenu (texte, image, code…)."
+  },
+  {
+    "question": "Quelle est la meilleure méthode pour construire un MVP IA ?",
+    "answer": "Commencer avec un modèle existant (OpenAI, Hugging Face, etc.), une API simple, et un jeu de données réduit. Prioriser un prototype fonctionnel plutôt qu'un algorithme parfait."
+  },
+  {
+    "question": "Quels outils un PM IA peut-il utiliser pour prototyper ?",
+    "answer": "Make.com, Zapier, LangChain, Bubble, Replit, Streamlit, Python notebooks, ou encore des agents IA prêts à l'emploi comme ChatGPT avec plugins."
+  },
+  {
+    "question": "Quels sont les risques éthiques de l'IA ?",
+    "answer": "Biais algorithmiques, décisions non transparentes, utilisation malveillante, perte de contrôle, dépendance excessive, atteinte à la vie privée."
+  },
+  {
+    "question": "Comment gérer les données dans un projet IA ?",
+    "answer": "Collecter, nettoyer, anonymiser, structurer et stocker les données. Travailler avec les data engineers pour créer des pipelines fiables et scalables."
+  },
+  {
+    "question": "Comment créer une roadmap IA ?",
+    "answer": "Identifier les quick wins, estimer les phases de collecte et d'entraînement, intégrer les contraintes d'infra et data, planifier des itérations de test/évaluation."
+  },
+  {
+    "question": "Quelles sont les erreurs fréquentes dans les projets IA ?",
+    "answer": "Sous-estimer le temps de préparation des données, viser trop d'automatisation trop tôt, ne pas cadrer le besoin métier, ignorer les tests utilisateurs."
+  },
+  {
+    "question": "Faut-il une équipe dédiée pour lancer un produit IA ?",
+    "answer": "Pas forcément. Une petite équipe pluridisciplinaire (PM, dev, data, design) peut suffire pour lancer un MVP. L'important est la capacité à itérer vite."
+  },
+  {
+    "question": "Quelle est la différence entre un PM classique et un PM IA ?",
+    "answer": "Le PM IA travaille dans un contexte d'incertitude algorithmique. Il doit piloter les performances d'un modèle et comprendre les limites techniques de l'IA."
+  },
+  {
+    "question": "Comment expliquer les résultats d'un modèle IA à un stakeholder ?",
+    "answer": "Avec des visualisations simples, des exemples concrets, et en mettant en avant la valeur métier plutôt que le détail technique."
+  },
+  {
+    "question": "Quelle est la place de l'explicabilité dans l'IA ?",
+    "answer": "Elle est cruciale pour les secteurs régulés (santé, finance…) ou lorsqu'une décision IA impacte un utilisateur. Il faut intégrer des outils d'audit ou de visualisation des décisions."
+  },
+  {
+    "question": "Un produit IA est-il toujours plus intelligent ?",
+    "answer": "Non, il est plus adapté dans certains cas, mais peut aussi introduire des erreurs. L'intelligence perçue dépend de l'usage, du contexte, et de l'expérience utilisateur."
+  },
+  {
+    "question": "Quels KPI suivre pour un produit IA ?",
+    "answer": "Des KPI business (taux de conversion, gain de temps), utilisateur (satisfaction, adoption), et techniques (précision, coût d'inférence, taux d'erreur)."
+  },
+  {
+    "question": "Comment tester un produit basé sur l'IA ?",
+    "answer": "Avec des tests UX classiques + tests de robustesse sur les outputs IA, surveillance des cas extrêmes, et collecte continue des retours utilisateurs."
+  },
+  {
+    "question": "Quel est le rôle d'un prompt dans une IA générative ?",
+    "answer": "Le prompt guide le comportement du modèle. Un bon prompt améliore la pertinence des réponses. Il devient un levier stratégique pour un PM IA."
+  },
+  {
+    "question": "Peut-on faire du A/B testing avec l'IA ?",
+    "answer": "Oui, notamment pour tester des variantes de modèles, prompts ou niveaux de personnalisation. Il faut mesurer les impacts à la fois techniques et business."
+  },
+  {
+    "question": "Comment intégrer un modèle OpenAI dans une app ?",
+    "answer": "En appelant l'API via une clé sécurisée (backend Node.js recommandé), et en structurant les inputs/outputs de manière claire pour l'interface utilisateur."
+  },
+  {
+    "question": "Quelles sont les limites actuelles des LLM comme GPT ?",
+    "answer": "Hallucinations, mémoire limitée, manque de logique profonde, biais, coûts d'inférence élevés, et difficulté à s'auto-corriger sans supervision humaine."
+  },
+  {
+    "question": "L'IA va-t-elle remplacer les Product Managers ?",
+    "answer": "Non. Elle transforme leur rôle en automatisant certaines tâches mais renforce aussi la nécessité de pilotage humain, de sens produit et d'éthique."
+  },
+  {
+    "question": "Faut-il coder pour être un bon PM IA ?",
+    "answer": "Pas nécessairement. Mais comprendre les bases du code et du fonctionnement des modèles aide à mieux collaborer avec les équipes tech et data."
+  },
+  {
+    "question": "Comment devenir PM IA ?",
+    "answer": "Se former aux fondamentaux IA, pratiquer sur des cas concrets, collaborer avec des data scientists, lancer un projet personnel, et documenter son apprentissage (ex: LinkedIn)."
+  }
+] 

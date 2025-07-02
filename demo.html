@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration Ekmek-Bot - Responsive Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #FFE99A 0%, #FF5F5F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .demo-section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .demo-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .demo-section p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .iframe-wrapper {
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 10px;
+            background: #f8f9fa;
+        }
+
+        .size-label {
+            text-align: center;
+            font-weight: bold;
+            color: #FF5F5F;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .responsive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .responsive-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .responsive-item h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .responsive-item iframe {
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .demo-section {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+            
+            .responsive-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 Ekmek-Bot Demo</h1>
+            <p>Démonstration du chatbot IA Product Management - Design Responsive</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>📱 Design Responsive</h2>
+            <p>Le chatbot s'adapte automatiquement à toutes les tailles d'écran avec un design moderne et ergonomique.</p>
+            
+            <div class="responsive-grid">
+                <div class="responsive-item">
+                    <h3>Desktop (>1200px)</h3>
+                    <div class="size-label">700×550px</div>
+                    <iframe 
+                        src="http://localhost:3000" 
+                        width="100%" 
+                        height="550" 
+                        style="max-width: 700px; border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+                    </iframe>
+                </div>
+                
+                <div class="responsive-item">
+                    <h3>Tablet (768px-1200px)</h3>
+                    <div class="size-label">600×500px</div>
+                    <iframe 
+                        src="http://localhost:3000" 
+                        width="100%" 
+                        height="500" 
+                        style="max-width: 600px; border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+                    </iframe>
+                </div>
+                
+                <div class="responsive-item">
+                    <h3>Mobile (480px-768px)</h3>
+                    <div class="size-label">100%×450px</div>
+                    <iframe 
+                        src="http://localhost:3000" 
+                        width="100%" 
+                        height="450" 
+                        style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+                    </iframe>
+                </div>
+                
+                <div class="responsive-item">
+                    <h3>Small Mobile (<480px)</h3>
+                    <div class="size-label">100%×400px</div>
+                    <iframe 
+                        src="http://localhost:3000" 
+                        width="100%" 
+                        height="400" 
+                        style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🔗 Code d'Intégration</h2>
+            <p>Voici les différents codes d'intégration selon votre usage :</p>
+            
+            <h3>Pour LinkedIn (Desktop/Tablet)</h3>
+            <div class="code-block">
+&lt;iframe 
+    src="https://your-deployed-url.com" 
+    width="600" 
+    height="500" 
+    frameborder="0"
+    style="border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"&gt;
+&lt;/iframe&gt;
+            </div>
+            
+            <h3>Pour site web (Responsive)</h3>
+            <div class="code-block">
+&lt;div style="text-align: center; margin: 20px 0;"&gt;
+    &lt;iframe 
+        src="https://your-deployed-url.com" 
+        width="100%" 
+        height="500" 
+        style="max-width: 600px; border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+            </div>
+            
+            <h3>Pour mobile (Optimisé)</h3>
+            <div class="code-block">
+&lt;iframe 
+    src="https://your-deployed-url.com" 
+    width="100%" 
+    height="450" 
+    frameborder="0"
+    style="border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);"&gt;
+&lt;/iframe&gt;
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>✨ Améliorations Apportées</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📐</div>
+                    <h3>Dimensions Optimisées</h3>
+                    <p>Plus large (600px) et moins haut (500px) pour une meilleure ergonomie</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Design Responsive</h3>
+                    <p>S'adapte automatiquement à tous les écrans (desktop, tablet, mobile)</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Border Radius</h3>
+                    <p>Coins arrondis (20px) pour un design moderne et élégant</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile First</h3>
+                    <p>Optimisé pour les appareils mobiles avec des breakpoints intelligents</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Performance</h3>
+                    <p>Animations fluides et transitions optimisées pour une UX parfaite</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Accessibilité</h3>
+                    <p>Contraste optimisé et navigation clavier pour tous les utilisateurs</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🧪 Test en Direct</h2>
+            <p>Testez le chatbot directement dans cette démonstration :</p>
+            
+            <div class="iframe-container">
+                <div class="iframe-wrapper">
+                    <div class="size-label">Test en Direct - 600×500px</div>
+                    <iframe 
+                        src="http://localhost:3000" 
+                        width="600" 
+                        height="500" 
+                        frameborder="0"
+                        style="border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
